@@ -1,38 +1,152 @@
-import React from 'react';
-import './home.css'
+import React from "react";
+import {VscDebugBreakpointLog} from "react-icons/vsc"
+import "./home.css";
 
 const Home = () => {
   return (
-    <div className="caroussel_diapo">
-        <input defaultChecked id="carou_un" name="rotation" type="radio" />
-        <label htmlFor="carou_un" />
-        <input id="carou_deux" name="rotation" type="radio" />
-        <label htmlFor="carou_deux" />
-        <input id="carou_trois" name="rotation" type="radio" />
-        <label htmlFor="carou_trois" />
-        <input id="carou_quatre" name="rotation" type="radio" />
-        <label htmlFor="carou_quatre" />
-        <input id="carou_cinq" name="rotation" type="radio" />
-        <label htmlFor="carou_cinq" />
-        <input id="carou_six" name="rotation" type="radio" />
-        <label htmlFor="carou_six" />
-        <input id="carou_sept" name="rotation" type="radio" />
-        <label htmlFor="carou_sept" />
-        <input id="carou_huit" name="rotation" type="radio" />
-        <label htmlFor="carou_huit" />
-        <div className="contenu_carou">
-          <div className="caroussel">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=822&q=80" alt="photo1" />
-            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="photo2" />
-            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="photo3" />
-            <img src="https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="photo4" />
-            <img src="https://images.unsplash.com/photo-1501349800519-48093d60bde0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="photo5" />
-            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="photo6" />
-            <img src="https://images.unsplash.com/photo-1560421683-6856ea585c78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="photo7" />
-            <img src="https://images.unsplash.com/photo-1534337621606-e3df5ee0e97f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="photo8" />
+    <div>
+      <div className="contain">
+        <a className="card4" href="#">
+          <svg
+            width="32px"
+            height="32px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            {/* Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch */}
+            <desc>Created with Sketch.</desc>
+            <defs />
+            <g
+              id="Page-1"
+              stroke="none"
+              strokeWidth={1}
+              fill="none"
+              fillRule="evenodd"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <g
+                id="Artboard-Copy-19"
+                transform="translate(-874.000000, -1729.000000)"
+                strokeWidth="1.5"
+              >
+                <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                  <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g
+                      id="Group-42"
+                      transform="translate(166.000000, 0.000000)"
+                    >
+                      <g
+                        id="Group-25"
+                        transform="translate(21.000000, 25.000000)"
+                      >
+                        <g
+                          id="Group-9"
+                          transform="translate(0.000000, 17.666667)"
+                        >
+                          <path
+                            d="M14,8.33306667 L14,12.3330667"
+                            id="Stroke-3"
+                            stroke="#CD3D73"
+                          />
+                          <polyline
+                            id="Stroke-1"
+                            stroke="#666666"
+                            points="18 4.33306667 18 12.3330667 10 12.3330667"
+                          />
+                          <polyline
+                            id="Stroke-5"
+                            stroke="#666666"
+                            points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"
+                          />
+                          <polygon
+                            id="Stroke-7"
+                            stroke="#666666"
+                            points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"
+                          />
+                        </g>
+                        <path
+                          d="M20,23.9997333 L14,17.9997333"
+                          id="Stroke-10"
+                          stroke="#666666"
+                        />
+                        <g
+                          id="Group-15"
+                          transform="translate(5.666667, 0.000000)"
+                          stroke="#666666"
+                        >
+                          <polygon
+                            id="Stroke-11"
+                            points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"
+                          />
+                          <path
+                            d="M24.3333333,7.99973333 L16.3333333,-0.000266666667"
+                            id="Stroke-13"
+                          />
+                        </g>
+                        <path
+                          d="M16,6.8148 L16,14.0001333"
+                          id="Stroke-16"
+                          stroke="#666666"
+                        />
+                        <polyline
+                          id="Stroke-17"
+                          stroke="#666666"
+                          points="28 5.99973333 28 23.9997333 24 23.9997333"
+                        />
+                        <path
+                          d="M8,13.9997333 L8,7.99973333"
+                          id="Stroke-19"
+                          stroke="#666666"
+                        />
+                        <path
+                          d="M20,8.99973333 L20,9.99973333"
+                          id="Stroke-20"
+                          stroke="#CD3D73"
+                        />
+                        <path
+                          d="M24,8.99973333 L24,9.99973333"
+                          id="Stroke-21"
+                          stroke="#CD3D73"
+                        />
+                        <path
+                          d="M20,13.9997333 L20,14.9997333"
+                          id="Stroke-22"
+                          stroke="#CD3D73"
+                        />
+                        <path
+                          d="M24,13.9997333 L24,14.9997333"
+                          id="Stroke-23"
+                          stroke="#CD3D73"
+                        />
+                        <path
+                          d="M24,18.9997333 L24,19.9997333"
+                          id="Stroke-24"
+                          stroke="#CD3D73"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h3>C'est quoi Archi-me?</h3>
+          <p className="small">
+            <VscDebugBreakpointLog/> Card description with lots of great facts and interesting details.
+          </p>
+          <p className="small">
+            <VscDebugBreakpointLog/> Card description with lots of great facts and interesting details.
+          </p>
+          <div className="dimmer" />
+          <div className="go-corner" href="#">
+            <div className="go-arrow">→</div>
           </div>
-        </div>
+        </a>
       </div>
+    </div>
   );
 };
 

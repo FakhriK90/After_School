@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+.vid video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+ 
+ .deepshadow {
+  font-family: 'Ramaraja', serif;
+  font-size: 92px;
+  padding: 80px 60px 2px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+    color: #e0dfdc;
+    letter-spacing: 0.3em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+ }
+
+.insetshadow{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 50px;
+  text-align: justify;
+  margin-left: 17%;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+.custom-btn {
+  margin: 10px;
+  width: 170px;
+  height: 40px;
+  color: rgb(34, 34, 34);
+  border-radius: 5px;
+  font-family: 'Ramaraja', serif;
+  font-weight: 500;
+  font-size: 20px;
+  background: rgba(214, 214, 214, 0.705);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  letter-spacing: .1em;
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+                   0 2px 0 hsl(174,5%,75%),
+                   0 3px 0 hsl(174,5%,70%),
+                   0 4px 0 hsl(174,5%,66%),
+                   0 5px 0 hsl(174,5%,64%),
+                   0 6px 0 hsl(174,5%,62%),
+                   0 7px 0 hsl(174,5%,61%),
+                   0 8px 0 hsl(174,5%,60%),
+  
+                   0 0 5px rgba(0,0,0,.05),
+                  0 1px 3px rgba(0,0,0,.2),
+                  0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.2),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.3);
+}

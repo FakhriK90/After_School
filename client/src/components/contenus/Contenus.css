@@ -1,0 +1,138 @@
+:root {
+    --clr-netural-900: rgb(44, 49, 53);
+    --clr-netural-100: white;
+    --clr-accent-400: #43CDC4;
+  }
+  
+  *,
+  *::befor
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  #contenus {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    place-items: center; 
+    line-height:1.6;
+    font-family: Arial, san-serif;
+  }
+  
+  .card {
+    color: var(--clr-netural-100);
+    background-image: url(https://www.asio.gov.au/sites/default/files/Man%20working%20on%20PC.jpg);
+    background-size: cover;
+    padding: 6rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.7rem;
+    overflow: hidden; 
+    border-style: solid;
+    border-width: 2px;
+    
+    transition: transform 500ms ease;
+  }
+  
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.13);
+  }
+  
+  .card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1));
+  }
+  
+  .card-title {
+    position: relative;
+    width: max-content;
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute; 
+    background: var(--clr-accent-400);
+    height: 4px;
+    width: calc(100% + var(--padding));
+    left: calc(var(--padding) * -1);
+    bottom: -1px;
+    
+    transform-origin: left;
+    transition: transform 500ms ease;  
+  }
+  
+  .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+  transform: scaleX(1);
+  }
+  
+  .card-body {
+    color: rgb(255 255 255 / 0.9)
+  }
+  
+  .button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-netural-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25rem;
+    border: 10px;
+  }
+  
+  .button:hover, 
+  .button:focus {
+    background-color: var(--clr-netural-100)
+  }
+  
+  @media (hover) {
+    
+    .card-content {
+    transform: translateY(65%); 
+    transition: transform 500ms ease;
+    }
+    
+    .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+  }
+  
+  .card:focus-within .card-content {
+    transition-duration: 0ms; 
+  }
+  
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+  
+  .card:hover .card-content > *:not(.card-title),
+  .card:focus-within .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 1000ms;
+    } 
+    
+    .card-title::after {
+       transform: scaleX(0);
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+      transition-delay: 0ms !important; 
+    }
+  }
+  

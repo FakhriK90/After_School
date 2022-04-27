@@ -6,7 +6,7 @@ const Contact_us = () => {
     <div>
      <div className="wrapper">
         <div className="title">
-          <h1>contact us form</h1>
+          <h1 className="text-contact">contact us form</h1>
         </div>
         <div className="contact-form">
           <div className="input-fields">
